@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ucl"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/real" />
+
+            <TextView
+                android:id="@+id/goalRl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/zero"
+                android:textAllCaps="true"
+                android:textSize="@dimen/result_size"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:onClick="addGoalRl"
+                android:text="@string/add"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/shotRl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/zero"
+                android:textAllCaps="true"
+                android:textSize="@dimen/result_size"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:onClick="addShotRl"
+                android:text="@string/add"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/offsideRl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/zero"
+                android:textAllCaps="true"
+                android:textSize="@dimen/result_size"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:onClick="addOffsideRl"
+                android:text="@string/add"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/cardRl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/zero"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/result_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:onClick="addCardRl"
+                android:text="@string/add"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/chico" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:drawableLeft="@drawable/ball"
+                android:gravity="center"
+                android:text="@string/goals"
+                android:textAllCaps="true"
+                android:textSize="@dimen/textSize"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/soccer"
+                android:gravity="center"
+                android:text="@string/shots"
+                android:textAllCaps="true"
+                android:textSize="@dimen/textSize"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/offside"
+                android:gravity="center"
+                android:text="@string/offside"
+                android:textAllCaps="true"
+                android:textSize="@dimen/textSize"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/card"
+                android:gravity="center"
+                android:text="@string/cards"
+                android:textAllCaps="true"
+                android:textSize="@dimen/textSize"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/psg" />
+
+            <TextView
+                android:id="@+id/goalPsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/zero"
+                android:textAllCaps="true"
+                android:textSize="@dimen/result_size"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:onClick="addGoalPsg"
+                android:text="@string/add"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/shotPsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/zero"
+                android:textAllCaps="true"
+                android:textSize="@dimen/result_size"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:onClick="addShotPsg"
+                android:text="@string/add"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/offsidePsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/zero"
+                android:textAllCaps="true"
+                android:textSize="@dimen/result_size"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:onClick="addOffsidePsg"
+                android:text="@string/add"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/cardPsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/zero"
+                android:textAllCaps="true"
+                android:textSize="@dimen/result_size"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:onClick="addCardPsg"
+                android:text="@string/add"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:onClick="reset"
+        android:text="@string/start"
+        android:textColor="@color/white" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">score</string>
+    <string name="goals">goal</string>
+    <string name="shots">shot</string>
+    <string name="offside">offside</string>
+    <string name="cards">red cards</string>
+    <string name="saves">saves</string>
+    <string name="start">start the match</string>
+    <string name="zero">0</string>
+    <string name="add">+1</string>
+</resources>
